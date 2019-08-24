@@ -21,5 +21,11 @@ public class Main {
 		for (Seller s: list) {
 			System.out.println(s);
 		}
+		
+		System.out.println("Seller findAll");
+		list = DaoFactory.createSellerDao().findAll();
+		for (Seller s: list) {
+			System.out.println(s);
+		}
 	}
 }
